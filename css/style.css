@@ -118,6 +118,7 @@ main .first-section {
 
 main section {
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     padding-top: 3em;
     width: 100%;
@@ -196,3 +197,55 @@ main .fifth-section {
 .operation .operation-picture {
     height: 180px;
 } 
+
+main .sixth-section {
+    background-color: rgb(228, 163, 255);
+}
+
+
+#Designit-up {
+    padding-top: 3em;
+    width: 100%;
+    background-color: rgb(255, 251, 122);
+    display: flex;
+    flex-flow: row;
+}
+
+#Designit-up > div {
+    width: 33%;
+}
+
+#Designit-up .box {
+    width: 50%;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+#Designit-up .left-side, .right-side {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#Designit-up .center {
+    background-color: #fff;
+}
+
+.center .big-box #big-logo {
+    width: 12em;
+    padding: 1em;
+}
+
+#Designit-down {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    background-color: #b4d0e7;
+}
+
+#Designit-down h2 {
+    width: 25%;
+}
