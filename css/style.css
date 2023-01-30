@@ -1,0 +1,93 @@
+.centered {
+    max-width: 1200px;
+    margin: auto 200px;
+}
+
+header {
+    height: 500px;
+    background-color: #b4d0e7;
+}
+
+
+
+/* NAV */
+nav {
+    height: 8%;
+    width: 100%;
+    background-color: rgb(138, 138, 243);
+    position: fixed;
+}
+
+nav .nav-inner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    gap: 5px;
+}
+
+.nav-inner .nav-links-left , .nav-links-left ul{
+    display: flex;
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.nav-inner .nav-links-right, .nav-links-right ul {
+    display: flex;
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    align-items: center;
+    gap: 1.5em;
+    
+}
+
+nav li a{
+    text-decoration: none;
+    padding: 1em;
+}
+
+.blue-button {
+    background-color: #0061ff;
+}
+
+/* //NAV */
+
+
+
+
+/* JUMBO */
+
+.jumbo {
+    padding-top: 100px;
+    height: 90%;
+}
+
+.jumbo #main-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 0.5em;
+    
+}
+.jumbo .jumbo-content {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.jumbo-content .jumbo-text {
+    height: 300px;
+    width: 300px;
+    padding: 1em;
+}
+
+.jumbo-content #jumbo-image {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
