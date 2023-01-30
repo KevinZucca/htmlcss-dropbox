@@ -14,9 +14,12 @@ header {
 nav {
     height: 8%;
     width: 100%;
-    background-color: rgb(138, 138, 243);
+    background-color: white;
     position: fixed;
+    padding: 1em;
+    box-shadow: 1px 1px  rgba(0, 0, 0, 0.3);
 }
+
 
 nav .nav-inner {
     display: flex;
@@ -49,10 +52,13 @@ nav .nav-inner {
 nav li a{
     text-decoration: none;
     padding: 1em;
+    color: black;
 }
 
 .blue-button {
     background-color: #0061ff;
+    color: white;
+    padding: 0.7em;
 }
 
 /* //NAV */
