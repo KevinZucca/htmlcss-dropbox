@@ -1,5 +1,5 @@
 .centered {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -33,7 +33,6 @@ nav .nav-inner {
 
 .nav-inner .nav-links-left , .nav-links-left ul{
     display: flex;
-    display: flex;
     flex-flow: row wrap;
     list-style-type: none;
     align-items: center;
@@ -41,7 +40,6 @@ nav .nav-inner {
 }
 
 .nav-inner .nav-links-right, .nav-links-right ul {
-    display: flex;
     display: flex;
     flex-flow: row wrap;
     list-style-type: none;
@@ -59,8 +57,9 @@ nav li a{
 .blue-button {
     background-color: #0061ff;
     color: white;
-    padding: 0.7em;
+    padding: 0.6em;
     text-decoration: none;
+    text-align: center;
 }
 
 /* //NAV */
@@ -81,8 +80,8 @@ nav li a{
 }
 
 .jumbo #main-title {
-    width: 80%;
-    font-size: 1.9em;
+    width: 100%;
+    font-size: 2em;
     font-weight: bold;
     padding: 0.5em;
     
@@ -91,7 +90,7 @@ nav li a{
 .jumbo .jumbo-content {
     display: flex;
     flex-flow: row;
-    width: 80%;
+    width: 100%;
 }
 
 .jumbo-content .jumbo-text {
@@ -99,7 +98,7 @@ nav li a{
     flex-flow: column wrap;
     gap: 1em;
     height: 100%;
-    width: 34%;
+    width: 30%;
     padding: 1em;
     line-height: 1.5em;
 }
@@ -109,7 +108,7 @@ nav li a{
 }
 
 #jumbo-image {
-    width: 70%;
+    max-width: 70%;
     display: flex;
 }
 
@@ -127,17 +126,9 @@ nav li a{
 
 /* MAIN */
 main {
-    background-color: rgb(180, 255, 190);
     display: flex;
     flex-direction: column;
 }   
-/* TEST */
-
-main .first-section {
-    background-color: rgb(97, 187, 252);
-}
-/* TEST */
-
 
 main section {
     display: flex;
@@ -147,56 +138,137 @@ main section {
     width: 100%;
 }
 
+
+main .first-section {
+    width: 80%;
+}
+
+main .first-section .circle {
+    width: 1em;
+}
+
+main .first-section ul {
+    padding-top: 2em;
+}
+
 .first-section ul {
     display: flex;
     gap: 3em;
     list-style-type: none;
 }
 
+
+
+
 .second-section .vertical-bsn-plans {
     display: flex;
     justify-content: center;
     flex-flow: row;
-    gap: 1em;
+    gap: 3em;
 }
 
-.vertical-bsn-plans .plan {
-    background-color: white;
+
+.plan-title {
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 1em;
+}
+
+.plan ul li {
+    list-style-type: none;
+}
+
+.vertical-bsn-plans .plan, .orizontal-bsn-plan {
     width: 30%;
-    height: 400px;
+    line-height: 2em;
+    padding: 1em;
+}
+.vertical-bsn-plans .plan {
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+.vertical-bsn-plans div {
+    padding: 1.5em 0;
+}
+
+.plan .trial {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.blue-check {
+    width: 1em;
+}
+
+#blue-write {
+    color: blue;
+}
+
+.third-section {
+    padding-top: 0;
+    margin-top: 2em;
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
 }
 
 .orizontal-bsn-plan {
     width: 100%;
-    background-color: rgb(161, 102, 102);
     display: flex;
-
+    flex-flow: row wrap;
 }
+
+.third-section .plan-title {
+    padding: 1em;
+}
+
+.orizontal-left p {
+    padding-top: 2em;
+}
+
+
+
 
 
 main .fourth-section {
-    background-color: rgb(237, 147, 207);
     display: flex;
     flex-flow: row;
-    justify-content: center;
+    justify-content: space-between;
     gap: 1em;
+    margin-top: 7em;
+}
+
+.fourth-section #partner-image img {
+    width: 100%;
 }
 
 .fourth-section #partner-image {
-    width: 60%;
-    height: 300px;
-    background-color: rgb(245, 245, 159);
+    max-width: 60%;
+}
+.fourth-section .partner-text {
+    width: 35%;
+    padding: 1em;
 }
 
-.fourth-section .partner-text {
-    width: 40%;
+.fourth-section .partner-text p {
+    padding: 1.8em 0;
 }
+
+.fourth-section a {
+    text-decoration: none;
+    color: black;
+    border: 0.5px solid black;
+    padding: 0.5em;
+}
+
+
+
+
 
 main .fifth-section {
-    background-color: rgb(247, 117, 117);
     flex-flow: row wrap;
     gap: 1em;
     width: 100%;
+    margin-top: 5em;
 }
 
 .fifth-section .operation-title {
