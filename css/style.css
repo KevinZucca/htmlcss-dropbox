@@ -281,3 +281,46 @@ main .sixth-section {
 .quest #last-quest {
     border-bottom: 1px solid black;
 }
+
+/* //MAIN */
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #000000;
+    color: white;
+    width: 100%;
+}
+
+
+footer .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: 3em;
+}
+
+
+.footer-column ul li {
+   list-style-type: none;
+}
+
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-column #links-title {
+    font-size: 1.5em;
+    padding-bottom: 2em;
+}
+
+.footer-inner #first-column {
+    border-bottom: 1px solid white;
+    padding-bottom: 3em;
+}
