@@ -240,12 +240,44 @@ main .sixth-section {
     width: 100%;
     height: 200px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
     background-color: #b4d0e7;
 }
 
-#Designit-down h2 {
-    width: 25%;
+#Designit-down .Designit-down-inner {
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    gap: 2em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Designit-down-inner h2 {
+    width: 35%;
+}
+
+
+.main-questions {
+    background-color: rgb(241, 121, 121);
+    width: 100%;
+    padding-top: 4em;
+}
+
+
+.questions {
+    display: flex;
+    flex-flow: column wrap;
+    padding-top: 3em;
+}
+
+.questions .quest {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    border-top: 1px solid black;
+}
+.quest #last-quest {
+    border-bottom: 1px solid black;
 }
