@@ -1,6 +1,6 @@
 .centered {
     max-width: 1200px;
-    margin: auto 200px;
+    margin: auto;
 }
 
 header {
@@ -64,25 +64,30 @@ nav li a{
 
 .jumbo {
     padding-top: 100px;
-    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .jumbo #main-title {
     font-size: 1.3em;
     font-weight: bold;
     padding: 0.5em;
+    width: 50%;
+    
     
 }
 .jumbo .jumbo-content {
-    width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .jumbo-content .jumbo-text {
     height: 300px;
-    width: 300px;
+    width: 30%;
     padding: 1em;
 }
 
@@ -141,6 +146,49 @@ main section {
     width: 100%;
     background-color: rgb(161, 102, 102);
     display: flex;
-    
+
 }
 
+
+main .fourth-section {
+    background-color: rgb(237, 147, 207);
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    gap: 1em;
+}
+
+.fourth-section #partner-image {
+    width: 60%;
+    height: 300px;
+    background-color: rgb(245, 245, 159);
+}
+
+.fourth-section .partner-text {
+    width: 40%;
+}
+
+main .fifth-section {
+    background-color: rgb(247, 117, 117);
+    flex-flow: row wrap;
+}
+
+.fifth-section .operation-title {
+    width: 100%;
+}
+
+.fifth-section .operation {
+    display: flex;
+    flex-flow: column;
+}
+
+
+.fifth-section .operation div {
+    width: calc(100% /3);
+    background-color: rgb(136, 136, 241);
+}
+
+.operation .operation-picture {
+    height: 180px;
+    width: 100%;
+}
