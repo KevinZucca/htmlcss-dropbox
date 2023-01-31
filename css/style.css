@@ -375,6 +375,7 @@ main .sixth-section a {
 
 #Designit-up #logo-1 {
     background-color: #a2d39b;
+    border: 15px solid #d1e9cd;
 }
 
 #Designit-up #logo-2 {
@@ -480,9 +481,27 @@ main .sixth-section a {
     border-bottom: 1px solid black;
 }
 
-.main-questions p {
-    font-weight: bold;
+.questions .hidden-answer {
+    display: none;
 }
+
+.questions .hidden-chevron {
+    display: none;
+}
+
+.questions .quest:hover .hidden-answer, strong{
+    display: inline-block;
+}
+
+.questions .quest:hover .chevron {
+    display: none;
+}
+
+.questions .quest:hover .hidden-chevron {
+    display: inline-block;
+}
+
+
 
 /* //MAIN */
 
