@@ -12,7 +12,6 @@ header {
 
 /* NAV */
 nav {
-    min-height: 8%;
     width: 100%;
     background-color: white;
     position: fixed;
@@ -267,12 +266,12 @@ main .fourth-section {
 main .fifth-section {
     flex-flow: row wrap;
     gap: 1em;
-    width: 100%;
     margin-top: 5em;
 }
 
 .fifth-section .operation-title {
     width: 100%;
+    font-size: 1.6em;
 }
 
 
@@ -281,17 +280,28 @@ main .fifth-section {
     flex-flow: column;
     width: calc(100% / 3 - 1em);
     height: calc(100% / 2);
-    border: 1px solid black;
-}
-
-
-.fifth-section .operation div {
-    background-color: rgb(136, 136, 241);
+    padding: 1em;
 }
 
 .operation .operation-picture {
-    height: 180px;
-} 
+    max-width: 100%;
+}
+
+.operation .operation-picture img {
+   height: 100%;
+   width: 100%;
+   object-fit: contain;
+}
+
+.operation .operation-subtitle {
+    padding-bottom: 1.5em;
+}
+
+
+
+
+
+
 
 main .sixth-section {
     background-color: rgb(228, 163, 255);
@@ -300,19 +310,12 @@ main .sixth-section {
 
 #Designit-up {
     padding-top: 3em;
-    width: 100%;
-    background-color: rgb(255, 251, 122);
     display: flex;
-    flex-flow: row;
-}
-
-#Designit-up > div {
-    width: 33%;
 }
 
 #Designit-up .box {
     width: 50%;
-    height: 200px;
+    height: 50%;
     background-color: #fff;
     border: 1px solid black;
 }
@@ -320,10 +323,14 @@ main .sixth-section {
 #Designit-up .left-side, .right-side {
     display: flex;
     flex-flow: row wrap;
+    width: calc(100vw / 3);
+    height: calc(100vh / 3);
+
 }
 
 #Designit-up .center {
     background-color: #fff;
+    flex-grow: 1;
 }
 
 .center .big-box #big-logo {
