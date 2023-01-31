@@ -3,6 +3,10 @@
     margin: auto;
 }
 
+.centered-big {
+    max-width: 1200px;
+    margin: auto;
+}
 header {
     min-height: 500px;
     background-color: #b4d0e7;
@@ -61,6 +65,13 @@ nav li a{
     text-align: center;
 }
 
+.blue-button:hover {
+    background-color: #2f7efd;
+}
+
+nav .hover:hover {
+    border-bottom: 4px solid gray;
+}
 /* //NAV */
 
 
@@ -274,6 +285,7 @@ main .fourth-section {
     border-right: 1px solid rgba(0, 0, 0, 0.3);
     padding: 0.5em;
 }
+
 
 
 
