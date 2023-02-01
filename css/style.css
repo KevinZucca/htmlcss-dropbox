@@ -133,6 +133,10 @@ nav .hover:hover {
     padding-bottom: 1.5em;
 }
 
+.jumbo i {
+    margin-top: 1em;
+}
+
 
 /* //JUMBO */
 
@@ -156,6 +160,7 @@ main section {
 
 main .first-section {
     width: 80%;
+    padding-top: 8em;
 }
 
 main .first-section .circle {
@@ -170,6 +175,10 @@ main .first-section ul {
     display: flex;
     gap: 3em;
     list-style-type: none;
+}
+
+.first-section .business-title h2 {
+    font-size: 2.2em;
 }
 
 
@@ -226,6 +235,9 @@ main .first-section ul {
 #blue-write {
     color: blue;
 }
+
+
+
 
 .third-section {
     padding-top: 0;
@@ -286,6 +298,10 @@ main .fourth-section {
     padding: 0.5em;
 }
 
+.fourth-section a:hover {
+    box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
 
 
 
@@ -293,7 +309,7 @@ main .fourth-section {
 
 main .fifth-section {
     flex-flow: row wrap;
-    gap: 1em;
+   gap: 2em;
     margin-top: 5em;
     margin-bottom: 5em;
 }
@@ -307,9 +323,8 @@ main .fifth-section {
 .fifth-section .operation {
     display: flex;
     flex-flow: column;
-    width: calc(100% / 3 - 1em);
+    width: calc(100% / 3 - 2em);
     height: calc(100% / 2);
-    padding: 1em;
 }
 
 .operation .operation-picture {
@@ -459,6 +474,10 @@ main .sixth-section a {
     color: black;
     background-color: #fff;
     padding: 0.8em 1.5em;
+}
+
+.Designit-down-inner a:hover {
+    box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 
