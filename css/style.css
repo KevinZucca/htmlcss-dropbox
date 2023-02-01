@@ -14,7 +14,11 @@ header {
 
 
 
+
+
+
 /* NAV */
+
 nav {
     width: 100%;
     background-color: white;
@@ -23,7 +27,6 @@ nav {
     box-shadow: 1px 1px  rgba(0, 0, 0, 0.3);
     z-index: 5;
 }
-
 
 nav .nav-inner {
     display: flex;
@@ -60,19 +63,30 @@ nav li a{
 .blue-button {
     background-color: #0061ff;
     color: white;
-    padding: 0.6em;
+    padding: 0.8em;
     text-decoration: none;
     text-align: center;
+    border: none;
+    width: 100%;
+    font-size: 1em;
 }
 
 .blue-button:hover {
     background-color: #2f7efd;
+    cursor: pointer;
 }
 
 nav .hover:hover {
     border-bottom: 4px solid gray;
 }
+
 /* //NAV */
+
+
+
+
+
+
 
 
 
@@ -124,8 +138,8 @@ nav .hover:hover {
 }
 
 #jumbo-image img {
-   height: 100%;
    width: 100%;
+   height: 100%;
    object-fit: contain;
 } 
 
@@ -135,10 +149,18 @@ nav .hover:hover {
 
 .jumbo i {
     margin-top: 1em;
+    color: black;
+}
+
+.jumbo #jumbo-button {
+    width: auto;
 }
 
 
 /* //JUMBO */
+
+
+
 
 
 
@@ -157,6 +179,12 @@ main section {
     width: 100%;
 }
 
+
+
+
+
+
+/* FIRST SECTION */
 
 main .first-section {
     width: 80%;
@@ -181,91 +209,113 @@ main .first-section ul {
     font-size: 2.2em;
 }
 
+/* //FIRST SECTION */
 
 
 
-.second-section .vertical-bsn-plans {
+
+
+
+/* SECOND SECTION */
+
+.second-section .plan-columns {
     display: flex;
     justify-content: center;
     flex-flow: row;
     gap: 3em;
 }
 
-
-.plan-title {
+.plan-header {
     text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    margin-bottom: 1em;
+    padding: 0.5em;
 }
 
-.plan ul {              
+.plan-body {
+    padding: 2em;
+}
+
+.second-section .plan {
     display: flex;
-    flex-flow: row wrap;
-} 
+    flex-flow: column wrap;
+    width: calc(100% / 3);
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+    line-height: 1.5em;
+}
 
+.second-section i.blue-check {
+    color: blue;
+}
 
-.plan ul li {
+.plan-body * {
+    padding-bottom: 1em;
+}
+
+.plan-body .plan-row h3 {
+    font-size: 2em;
+}
+
+.plan-body .plan-row ul {
     list-style-type: none;
 }
 
-.vertical-bsn-plans .plan, .orizontal-bsn-plan {
-    width: 30%;
-    line-height: 2em;
-    padding: 1em; 
-}
-
-.vertical-bsn-plans .plan {
-    border: 0.5px solid rgba(0, 0, 0, 0.3); */
-}
-
-.vertical-bsn-plans div {
-    padding: 1.5em 0;
-}  
-
-.plan .trial {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-} 
-
-.blue-check {
-    width: 1em;
+.plan-body .plan-row #spaced {
+    padding-top: 3em;
 }
 
 #blue-write {
     color: blue;
 }
 
-
-
-
-.third-section {
-    padding-top: 0;
-    margin-top: 2em;
-    border: 0.5px solid rgba(0, 0, 0, 0.3);
+.plan-row li {
+    display: flex;
 }
 
-.orizontal-bsn-plan {
-    width: 100%;
+.plan-row .plan-logo {
+    padding-right: 0.5em;
+}
+
+
+
+
+
+
+
+.plan-orizontal {
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+    line-height: 1.5em;
+    margin-top: 3em;
+}
+
+.plan-orizontal .plan-body {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
 }
 
-.third-section .plan-title {
-    padding: 1em;
+.plan-orizontal .plan-body .left {
+    width: 70%;
 }
 
-.orizontal-left p {
-    padding-top: 2em;
+.plan-orizontal .right button{
+    padding: 0.8em 2.3em;
 }
 
+/*//SECOND SECTION  */
 
 
 
 
 
 
-main .fourth-section {
+
+
+
+
+
+/* THIRD SECTION */
+
+main .third-section {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -273,54 +323,61 @@ main .fourth-section {
     margin-top: 7em;
 }
 
-.fourth-section #partner-image img {
+.third-section #partner-image img {
     width: 100%;
 }
 
-.fourth-section #partner-image {
+.third-section #partner-image {
     max-width: 60%;
 }
-.fourth-section .partner-text {
+.third-section .partner-text {
     width: 35%;
     padding: 1em;
 }
 
-.fourth-section .partner-text p {
+.third-section .partner-text p {
     padding: 1.8em 0;
 }
 
-.fourth-section a {
+.third-section button {
     text-decoration: none;
     color: black;
-    border: 1px solid black;
+    background-color: #fff;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
     border-right: 1px solid rgba(0, 0, 0, 0.3);
     padding: 0.5em;
 }
 
-.fourth-section a:hover {
-    box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.5);
+.third-section button:hover {
+    box-shadow: 1px 1px 1px  rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
+/* //THIRD SECTION */
 
 
 
 
 
-main .fifth-section {
+
+
+
+/* FOURTH SECTION */
+
+main .fourth-section {
     flex-flow: row wrap;
    gap: 2em;
     margin-top: 5em;
     margin-bottom: 5em;
 }
 
-.fifth-section .operation-title {
+.fourth-section .operation-title {
     width: 100%;
     font-size: 1.6em;
 }
 
 
-.fifth-section .operation {
+.fourth-section .operation {
     display: flex;
     flex-flow: column;
     width: calc(100% / 3 - 2em);
@@ -341,34 +398,36 @@ main .fifth-section {
     padding-bottom: 1.5em;
 }
 
+/* //FOURTH SECTION */
 
 
 
 
 
+/* FIFTH SECTION */
 
-main .sixth-section h1 {
+main .fifth-section h1 {
     font-size: 2em;
     max-width: 50%;
     padding-bottom: 1em;
 }
 
-main .sixth-section a {
+main .fifth-section a {
     color: blue;
     padding-bottom: 3em;
 }
 
+/* //FIFTH SECTION */
 
 
 
 
-
+/* DESIGNIT SECTION */
 #Designit-up {
     padding-top: 3em;
     display: flex;
     flex-flow: row;
-    width: 100%;
-    height: 500px;
+    min-height: 700px;
 }
 
 #Designit-up .left-side, #Designit-up .right-side {
@@ -380,9 +439,11 @@ main .sixth-section a {
 #Designit-up .center {
     display: flex;
     flex-flow: column wrap;
-    max-width: calc(100vw / 3);
-    padding: 2em;
+    width: calc(100vw / 3);
+    padding: 3em;
     background-color: #f5f5f5;
+    overflow-y: auto;
+    line-height: 2em;
 }
 
 #Designit-up .box {
@@ -392,6 +453,7 @@ main .sixth-section a {
     width: 50%;
     height: 50%; 
 }
+
 #Designit-up .box .logo-box {
     height: 50%;
     width: 50%;
@@ -402,7 +464,7 @@ main .sixth-section a {
 
 #Designit-up #logo-1 {
     background-color: #a2d39b;
-    border: 15px solid #d1e9cd;
+    border: 1em solid #d1e9cd;
 }
 
 #Designit-up #logo-2 {
@@ -452,7 +514,7 @@ main .sixth-section a {
 
 #Designit-down {
     width: 100%;
-    min-height: 200px;
+    min-height: 300px;
     display: flex;
     background-color: #b4d0e7;
 }
@@ -466,23 +528,32 @@ main .sixth-section a {
     padding: 1em;
 }
 
-.Designit-down-inner h2 {
-    width: 35%;
+.Designit-down-inner h1 {
+    font-size: 2em;
+    max-width: 50%;
 }
-.Designit-down-inner a {
+
+.Designit-down-inner button {
     text-decoration: none;
     color: black;
     background-color: #fff;
-    padding: 0.8em 1.5em;
+    padding: 0.8em 2.5em;
+    border: none;
+    font-size: 1em;
 }
 
-.Designit-down-inner a:hover {
+.Designit-down-inner button:hover {
     box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
+/* //DESIGNIT SECTION */
 
 
 
+
+
+/* FAQ SECTION */
 
 .main-questions {
     width: 100%;
@@ -532,9 +603,14 @@ main .sixth-section a {
     display: inline-block;
 }
 
+/* //FAQ SECTION */
+
 
 
 /* //MAIN */
+
+
+
 
 
 
