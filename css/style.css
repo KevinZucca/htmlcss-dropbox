@@ -12,6 +12,10 @@ header {
     background-color: #b4d0e7;
 }
 
+body {
+    position: relative;
+}
+
 
 
 
@@ -670,4 +674,75 @@ footer .footer-end {
 
 .footer-end #language a{
     color: white;
+}
+
+
+
+
+
+
+/* BONUS ELEMENTS */
+
+
+@keyframes pop-up {
+0% {
+    opacity: 0%;
+} 50% {
+    opacity: 100%;
+}75% {opacity: 100%;
+}100% {
+    opacity: 0%;
+}
+}
+
+.cookies-absolute {
+    position: absolute;
+    top: 3%;
+    right: 37%;
+    animation-name: pop-up;
+    animation-duration: 8s;
+    opacity: 0%;
+}
+
+.cookies {
+    position: relative;
+}
+
+.cookies-inner {
+    width: calc(100vw / 4);
+    background-color: rgb(241, 249, 131);
+    padding: 3em;
+    border: 1px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.cookies-inner h3 {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    color: #667df1;
+}
+
+.cookies-inner img {
+    width: 100%;
+}
+
+.cookies-inner button {
+    width: calc(100% / 2 - 1em);
+}
+
+.cookies i {
+  position: absolute;
+  top: 1px;
+  right: 2px;
+  font-size: 3em;
+  color: #2f7efd;
+}
+
+.cookies p {
+    font-weight: bold;
+    text-align: center;
 }
